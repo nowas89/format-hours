@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>godziny</title>
-  <link href="css.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>godziny</title>
+    <link href="css.css" rel="stylesheet">
 </head>
+
 <body>
-        <div id="container">
-            <div class="inputs">
-                <h2>Godziny łącznie</h2>
-                <input type="text" class="amount" placeholder="Wpisz liczbę godzin" id="hours">
-            </div>
-            <div class="inputs">
-                <h2>minut łącznie</h2>
-                <input type="text" class="amount" placeholder="Wpisz liczbę minut" id="minuts">
-            </div>
-            <div class="inputs">
-                <h2>sekund</h2>
-                <input type="text" class="amount" placeholder="Wpisz liczbę sekund" id="second">
-            </div>
+    <div id="container">
+        <div class="inputs">
+            <h2>Godziny łącznie</h2>
+            <input type="text" class="amount" placeholder="Wpisz liczbę godzin" id="hours">
         </div>
+        <div class="inputs">
+            <h2>minut łącznie</h2>
+            <input type="text" class="amount" placeholder="Wpisz liczbę minut" id="minutes">
+        </div>
+        <div class="inputs">
+            <h2 id="asd">sekund</h2>
+            <input type="text" class="amount" placeholder="Wpisz liczbę sekund" id="second">
+        </div>
+    </div>
+    <div id='result-container'>
+        <button id='convert-button'>Convert</button>
+        <h1 id='result'>Liczba godzin:</h1>
+    </div>
 
-
-
-
+    <script src="javascript.js"></script>
 </body>
+
 </html>
