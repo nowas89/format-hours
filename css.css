@@ -44,11 +44,14 @@ text-align: center;
   width: 600px;
   position: relative;
   margin: 0 auto;
+
 }
 #result-container h1{
   margin: 0 auto;
   text-align: center;
-  opacity: 0.3;
+
+  display: inline-block;
+  margin-right: 15px;
 }
 
 #convert-button {
