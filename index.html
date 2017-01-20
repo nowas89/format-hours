@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="PL">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>convert hours minutes seconds to decimaL</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="css.css" rel="stylesheet"> -->
+    <link href="css.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="container">
-        <div class="inputs">
-            <h2>Godziny łącznie</h2>
-            <input type="text" class="amount" placeholder="Wpisz liczbę godzin" id="hours">
-        </div>
-        <div class="inputs">
-            <h2>minut łącznie</h2>
-            <input type="text" class="amount" placeholder="Wpisz liczbę minut" id="minutes">
-        </div>
-        <div class="inputs">
-            <h2 id="asd">sekund</h2>
-            <input type="text" class="amount" placeholder="Wpisz liczbę sekund" id="second">
+
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>Convert Machine</h1>
+      <p>Convert your wasted time at work to a decimal number</p>
+    </div>
+  </div>
+    <!-- <div class="container center-block"> -->
+    <div class="container">
+            <div class="well center-block textAlign row">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="hours" id="hours">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="minutes" id="minutes">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="seconds" id="seconds">
+                    </div>
+
+                </form>
+                <button class="btn btn-primary center-block" id='convert-button'>Convert</button>
+                <div id='container'>
+                    <hr>
+                    <h1 id='result'></h1>
+                    <br>
+                    <h1 id='usedValues'></h1>
+                    <h1 id='hoursDecimal'></h1>
+                    <h1 id='minutesDecimal'></h1>
+                    <h1 id='secondsDecimal'></h1>
+            </div>
         </div>
     </div>
-    <div id='result-container'>
-        <button id='convert-button'>Convert</button>
-        <h1 id='result'></h1>
-        <h1 id='hoursDecimal'></h1>
-        <h1 id='minutesDecimal'></h1>
-        <h1 id='secondsDecimal'></h1>
-    </div>
-
-
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
